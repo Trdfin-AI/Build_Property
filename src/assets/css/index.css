@@ -853,7 +853,10 @@ body {
 
 }
 
-
+.form-group select {
+    width: 98% !important;
+    background-color: white;
+}
 
 
 /* Apply multiple styles to the placeholder */
@@ -879,9 +882,11 @@ textarea:focus::placeholder {
 .form-group input[type="file"]:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border: none;
+    /* border: none; */
+    border-bottom: 2px solid var(--primary-color);
 
 }
+
 .form-group input[type="file"]{
     background-color: white;
 }
@@ -919,6 +924,14 @@ button:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
+}
+
+@media (max-width: 321px) {
+    .form-group select {
+        width: 50% !important;
+        background-color: white;
+    }
+
 }
 
 
@@ -1016,7 +1029,7 @@ button:hover {
     }
 
     .form-group select {
-        width: 88% !important;
+        width: 75% !important;
         background-color: white;
     }
 
@@ -1172,10 +1185,9 @@ button:hover {
     }
 
     .form-group select {
-        width: 120%;
+        width: 70% !important;
         background-color: white;
     }
-
 
     .formSection1,
     .formSection2,
@@ -1299,7 +1311,7 @@ button:hover {
         padding-left: 2px;
         padding-right: 20px;
         font-size: 12px;
-        border: 1px solid var(--primary-color);
+        border: none;
         border-radius: 4px;
         outline: none;
         overflow: hidden;
@@ -1466,7 +1478,7 @@ button:hover {
 
 
     .form-group select {
-        width: 88% !important;
+        width: 98% !important;
         background-color: white;
     }
 
