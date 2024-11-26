@@ -308,15 +308,11 @@ body {
             margin-bottom: 0px;
             top: 0px;
             margin-top: 0px;
-        }
-
-        ;
+        };
 
         #searchBtn {
             margin-top: 0px;
-        }
-
-        ;
+        };
 
         #profileBtn {
             background-color: var(--primary-color);
@@ -812,6 +808,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 20% !important;
 }
 
 .formSection4 {
@@ -850,7 +847,7 @@ body {
     width: 90%;
     padding: 10px;
     font-size: 14px;
-    border: 1px solid var(--primary-color);
+    border:none;
     border-radius: 4px;
     outline: none;
     overflow: hidden;
@@ -886,12 +883,10 @@ textarea:focus::placeholder {
     border: none;
 
 }
-
-.form-group textarea {
-    margin: auto;
-    text-align: center;
-    align-items: center;
+.form-group input[type="file"]{
+    background-color: white;
 }
+
 
 
 /* Style the file input button text */
